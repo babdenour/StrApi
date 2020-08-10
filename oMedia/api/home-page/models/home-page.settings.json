@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "name": "home_page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "article": {
+      "type": "component",
+      "repeatable": true,
+      "component": "articles.articles"
+    }
+  }
+}
